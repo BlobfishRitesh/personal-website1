@@ -39,6 +39,14 @@ header.center {
 	text-align: center;
 }
 
+/* Profile image styling */
+.profile-image {
+  width: 500px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 /* Heading color and spacing */
 h1, h2, h3 {
 	color: #111827;
@@ -66,6 +74,12 @@ p {
 .muted {
 	color: #64748b;
 	font-size: 0.95rem;
+}
+
+/* Makes the text slightly larger and darker for subheaders */
+.bitBig {
+	font-size: 1.1rem;
+	color: #080505
 }
 
 /* Button base styling */
