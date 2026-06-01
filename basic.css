@@ -1,0 +1,145 @@
+/* Reset styles for consistent spacing and box sizing across browsers */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Base typography and page background */
+html {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+	background: linear-gradient(180deg, #f7f7f8 0%, #eef2f7 100%);
+	color: #1f2937;
+}
+
+/* Ensure the body fills the viewport height */
+body {
+	min-height: 100vh;
+}
+
+/* Main centered page wrapper with max width and padding */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 2rem 1.5rem 3rem;
+}
+
+/* Header spacing and subtle separator line */
+header {
+	padding: 2rem 0 1.5rem;
+	border-bottom: 1px solid rgba(148,163,184,0.35);
+}
+
+/* Center text alignment for the header section */
+header.center {
+	text-align: center;
+}
+
+/* Heading color and spacing */
+h1, h2, h3 {
+	color: #111827;
+	margin-bottom: 0.75rem;
+}
+
+/* Main page title size and letter spacing */
+h1 {
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	letter-spacing: -0.03em;
+}
+
+/* Subheading size */
+h2 {
+	font-size: 1.4rem;
+}
+
+/* Paragraph spacing and text color */
+p {
+	margin-bottom: 1rem;
+	color: #334155;
+}
+
+/* Secondary text style for muted details */
+.muted {
+	color: #64748b;
+	font-size: 0.95rem;
+}
+
+/* Button base styling */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1.2rem;
+	border-radius: 999px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+	transform: translateY(-1px);
+}
+
+/* Primary action button styling */
+.btn-primary {
+	background: #2563eb;
+	color: #fff;
+	box-shadow: 0 10px 25px rgba(37,99,235,0.16);
+}
+
+/* Outline button style for optional secondary actions */
+.btn-outline {
+	background: transparent;
+	border: 1px solid #cbd5e1;
+	color: #111827;
+}
+
+/* Card container style for content sections */
+.card {
+	background: rgba(255,255,255,0.95);
+	border: 1px solid rgba(148,163,184,0.25);
+	border-radius: 20px;
+	padding: 1.75rem;
+	box-shadow: 0 18px 40px rgba(15,23,42,0.08);
+}
+
+/* Spacing between stacked cards */
+.card + .card {
+	margin-top: 1rem;
+}
+
+/* Section spacing to separate page areas */
+section {
+	margin-top: 1.5rem;
+}
+
+/* List styling for skills and other item lists */
+ul {
+	list-style: disc inside;
+}
+
+/* Individual list item spacing */
+li {
+	margin-bottom: 0.55rem;
+	color: #334155;
+}
+
+/* Responsive padding adjustments for smaller screens */
+@media (max-width: 760px) {
+	.container {
+		padding: 1.5rem 1rem 2rem;
+	}
+
+	.card {
+		padding: 1.25rem;
+	}
+}
+
+/* Small helper class for spacing between sections */
+.spacer { height: 1rem; }
+
