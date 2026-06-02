@@ -14,6 +14,7 @@ html {
 	font-size: 16px;
 	background: linear-gradient(180deg, #f7f7f8 0%, #eef2f7 100%);
 	color: #1f2937;
+	scroll-padding-top: 4rem;
 }
 
 /* Ensure the body fills the viewport height */
@@ -33,13 +34,15 @@ nav {
 }
 
 nav a {
+	display: inline-block;
 	margin: 0 1rem;
 	text-decoration: none;
 	color: #1f2937;
 }
 
 nav a:hover {
-	color: #70d4d4;
+	color: #670d0d;
+	transform:scale(1.1);
 }
 
 /* Main centered page wrapper with max width and padding */
@@ -153,8 +156,8 @@ li {
 	position: absolute;
 	right: 2rem;
 	bottom: 0.4rem;
-	background-color: #70d4d4;
-	border-radius: 18px;
+	background-color: #a2bebe;
+	border-radius: 7px;
 }
 
 /* Dark mode changing */
@@ -184,7 +187,8 @@ body.dark nav a {
 }
 
 body.dark nav a:hover {
-	color: #70d4d4;
+	color: #e49595;
+	transform:scale(1.1);
 }
 
 /* caption of my picture */
