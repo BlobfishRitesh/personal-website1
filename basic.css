@@ -82,44 +82,16 @@ p {
 	color: #080505
 }
 
-/* Button base styling */
-.btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.75rem 1.2rem;
-	border-radius: 999px;
-	text-decoration: none;
-	font-weight: 600;
-	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
+/* Button styles removed per user request */
 
-/* Button hover effect */
-.btn:hover {
-	transform: translateY(-1px);
-}
-
-/* Primary action button styling */
-.btn-primary {
-	background: #2563eb;
-	color: #fff;
-	box-shadow: 0 10px 25px rgba(37,99,235,0.16);
-}
-
-/* Outline button style for optional secondary actions */
-.btn-outline {
-	background: transparent;
-	border: 1px solid #cbd5e1;
-	color: #111827;
-}
 
 /* Card container style for content sections */
 .card {
 	background: rgba(255,255,255,0.95);
 	border: 1px solid rgba(148,163,184,0.25);
-	border-radius: 20px;
+	border-radius: 24px;
 	padding: 1.75rem;
-	box-shadow: 0 18px 40px rgba(15,23,42,0.08);
+	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 /* Spacing between stacked cards */
@@ -152,6 +124,42 @@ li {
 	.card {
 		padding: 1.25rem;
 	}
+}
+
+/* Dark mode toggle button styling */
+#darkModeBtn {
+	font-size: 1.25rem;
+	padding: 0.5rem 1rem;
+	margin-top: 4rem;
+	margin-right: 1rem;
+	float: right;
+	background-color: #d56b6b;
+	border-radius: 500px;
+}
+
+/* Dark mode changing */
+body.dark {
+	background: #000000;
+	color: #ffffff;
+}
+
+body.dark .card {
+	background: rgba(255,255,255,0.1);
+	border: 5px;
+	border-color:rgba(0, 0, 0, 0.15);
+	box-shadow: 0 18px 40px rgba(255, 255, 255, 0.05);
+}
+
+body.dark p, body.dark .muted, body.dark li, body.dark .title, body.dark .subheading {
+	color: #e3e9f4;
+}
+
+/* caption of my picture */
+.pfpCaption {
+	font-size: 0.9rem;
+	color: #64748b;
+	margin-top: 0.5rem;
+	margin-right: 14rem;
 }
 
 /* Small helper class for spacing between sections */

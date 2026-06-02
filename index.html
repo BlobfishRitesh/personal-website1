@@ -4,41 +4,41 @@
     <!-- Document metadata and responsive settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ritesh Phuyal | Personal Website</title>
+    <title class = "title">Ritesh Phuyal | Personal Website</title>
     <link rel="stylesheet" href="basic.css" />
 </head>
 <body>
     <!-- Centering the page content and providing page padding -->
     <div class="container">
+        <!-- Dark mode toggle button -->
+        <button id="darkModeBtn">Dark Mode Toggle 🌙</button>
         <!-- Page header with name, tagline, and a button -->
         <header class="center">
             <!-- Profile image displayed next to the title -->
             <img src="images/mepic.png" alt="Profile Picture" class="profile-image" />
-            <p class="muted">(On the right)</p>
-            <h1>Ritesh Phuyal</h1>
+            <p class="pfpCaption">(I am on the right 😎)</p>
+            <h1 class = "subheading">Ritesh Phuyal</h1>
             <p class="muted">Computer Science Student</p>
-            <p>
-                <a class="btn btn-primary" href="#contact">Contact Me</a>
-            </p>
+            <!-- contact button removed -->
         </header>
 
         <main>
             <!-- About section describing my background and goals -->
             <section class="card">
-                <h2>About Me</h2>
-                <p>Dedicated student with a passion for computer science and software development.</p>
+                <h2 class = "subheading">About Me</h2>
+                <p>I’m a highschool student interested in programming, computer networking, and AI. I enjoy building projects and learning new technologies. I plan on majoring in Computer Science in college, I look forward to contributing to the field and making a positive impact.</p>
             </section>
 
             <div class="spacer"></div>
 
             <!-- Skills section with a short list of my strengths -->
             <section class="card">
-                <h2>Skills</h2>
+                <h2 class = "subheading">Skills</h2>
                 <ul>
                     <li>Computer Programming</li>
                     <li>Computer Networking</li>
                     <li>Problem Solving</li>
-                    <li>Being the goat</li>
+                    <li>Proficient in AI</li>
                 </ul>
             </section>
 
@@ -46,23 +46,29 @@
 
             <!-- Experience section showing my recent work or internship -->
             <section class="card">
-                <h2>Experience</h2>
-                <p class = "bitBig"><strong>May 2026 – Present</strong></p>
-                <p>Interned at George Mason University where I gained hands-on experience in computer networking as I researched 5G systems.</p>
+                <h2 class = "subheading">Experience</h2>
+                <p class = "bitBig"><strong>George Mason University Research - May 2026 – August 2026</strong></p>
+                <p>Interned at George Mason University, where I gained hands-on experience in computer 
+                    networking while researching 5G systems. Worked in small teams led by experienced 
+                    professors and PHD students which improved my collaboration and teamwork skills.</p>
+                <p class = "bitBig"><strong>NACC Volunteer - September 2023 – Present</strong></p>
+                <p>Volunteered at the Nepali American Community Center, where I organized and helped 
+                    set up various Nepali events. Events ranged from huge cultural festivals to smaller
+                    gatherings focussed on community engagement.</p>
             </section>
 
             <div class="spacer"></div>
 
             <!-- Contact section with email and location -->
             <section class="card" id="contact">
-                <h2>Contact</h2>
+                <h2 class = "subheading">Contact</h2>
                 <p class="muted">Email: phuyalritesh@gmail.com</p>
                 <p class="muted">From: Kathmandu, Nepal</p>
                 <p class="muted">Location: Northern Virginia</p>
             </section>
         </main>
     </div>
-    <!--JavaScript include for future interactivity -->
+    <!--JavaScript implementation -->
     <script src="script.js"></script>
 </body>
 </html>
