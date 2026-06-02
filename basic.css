@@ -21,6 +21,27 @@ body {
 	min-height: 100vh;
 }
 
+/* Navigation bar styling */
+nav {
+	text-align: center;
+	padding: 1rem;
+	background: white;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+	margin: 0 1rem;
+	text-decoration: none;
+	color: #1f2937;
+}
+
+nav a:hover {
+	color: #70d4d4;
+}
+
 /* Main centered page wrapper with max width and padding */
 .container {
 	max-width: 960px;
@@ -41,10 +62,12 @@ header.center {
 
 /* Profile image styling */
 .profile-image {
-  width: 500px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 12px;
+	display: block;
+	width: 600px;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 12px;
+	margin-left: 9.5rem;
 }
 
 /* Heading color and spacing */
@@ -81,9 +104,6 @@ p {
 	font-size: 1.1rem;
 	color: #080505
 }
-
-/* Button styles removed per user request */
-
 
 /* Card container style for content sections */
 .card {
@@ -130,11 +150,11 @@ li {
 #darkModeBtn {
 	font-size: 1.25rem;
 	padding: 0.5rem 1rem;
-	margin-top: 4rem;
-	margin-right: 1rem;
-	float: right;
-	background-color: #d56b6b;
-	border-radius: 500px;
+	position: absolute;
+	right: 2rem;
+	bottom: 0.4rem;
+	background-color: #70d4d4;
+	border-radius: 18px;
 }
 
 /* Dark mode changing */
@@ -154,12 +174,42 @@ body.dark p, body.dark .muted, body.dark li, body.dark .title, body.dark .subhea
 	color: #e3e9f4;
 }
 
+body.dark nav {
+	background: #444444;
+	color: #fff;
+}
+
+body.dark nav a {
+	color: #e3e9f4;
+}
+
+body.dark nav a:hover {
+	color: #70d4d4;
+}
+
 /* caption of my picture */
 .pfpCaption {
 	font-size: 0.9rem;
 	color: #64748b;
 	margin-top: 0.5rem;
-	margin-right: 14rem;
+}
+
+/* Navigation bar styling */
+nav {
+	position: sticky;
+	top: 0;
+	background: white;
+	padding: 0.9rem;
+	z-index: 100;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+	margin-left: 2rem;
+	color: #1f2937;
+	text-decoration: none;
+	font-weight: 500;
+	text-align: center;
 }
 
 /* Small helper class for spacing between sections */
